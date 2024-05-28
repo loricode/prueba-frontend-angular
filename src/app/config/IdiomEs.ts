@@ -1,6 +1,6 @@
 export const IdiomEs = {
     lblIdiioma:"Español",
-    lblCiudad:"City",
+    lblCiudad:"Ciudad",
     lblPaisCiudades:'Paises y Ciudades',
     lblDetalle:'Detalle',
     lblbuscar:'Buscar',
