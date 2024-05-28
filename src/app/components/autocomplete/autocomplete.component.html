@@ -1,0 +1,31 @@
+<div class="container mt-2">
+   <div class="input-group mb-3">
+      <input 
+        autocomplete="off"
+        id="dropdownMenuButton1" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false"
+        (focus)="handleFocus()"
+        type="text" 
+        [formControl]="searchText"
+        class="form-control" 
+        placeholder={{textInput}}
+      >
+      <button 
+        (click)="clearInput()"
+        class="btn btn-outline-secondary" 
+        type="button" id="button-addon2">
+        x
+      </button>
+       
+      <div class="dropdown-menu autocomplete-list" aria-labelledby="dropdownMenuButton1">
+     
+         <li *ngFor="let item of (dataList | filterAutocomplete:searchText.value)" (click)="handleItemSelected(item)" class="list-group-item autocomplete-items  border-0">
+             {{ item.dsc }}
+          </li>
+      
+      </div>    
+   </div>
+      
+   
+</div>

@@ -1,0 +1,41 @@
+<div class="screen1-container">
+
+   <div class="container">
+
+      <div class="mt-3 mb-3">
+       <app-button-next 
+       urlPath="travel/two"
+       [btnDisabled]="btnDisaled"
+       >
+      </app-button-next>
+      </div>
+
+      <div class="card p-3">
+
+         <h2 class="text-center">
+          {{this.contextService.language[this.contextService.codeIdiom].lblPaisCiudades}}
+         </h2>
+
+        <app-autocomplete 
+          [dataList]="listCountries"
+          (selectedItem)="setItemCountry($event)"
+          (handleClear)="claerBtn()"
+       
+          textInput={{this.contextService.language[this.contextService.codeIdiom].lblbuscar}}
+         />
+
+         <div class="select-city mb-3">
+            <select (change)="seletedItemCity($event.target)" class="form-select" id="inputGroupSelect01">
+             @for(item of listCity; track item.cityId){
+               <option  value={{item.cityId}}>{{item.cityName}}</option>
+             }@empty{
+               <option value="d">{{this.contextService.language[this.contextService.codeIdiom].lblNohayRegistro}}</option>
+             }
+            </select>
+          </div>
+         
+      </div>
+
+   </div>
+
+</div>

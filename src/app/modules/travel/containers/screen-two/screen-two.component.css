@@ -1,0 +1,13 @@
+.screen2-container{
+   display: flex;
+   flex-direction: column;
+   padding: 8px;
+}
+
+.card{
+   min-height: 65vh;
+  }
+
+.box-buttons {
+   gap: 10px;
+}

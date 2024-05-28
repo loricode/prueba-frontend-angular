@@ -1,0 +1,144 @@
+<div class="screen2-container">
+
+   <div class="container">
+
+      <div class="d-flex box-buttons mt-3 mb-3">
+       <app-button-start urlPath="travel"></app-button-start>
+      </div>
+
+      <div class="card p-4">
+
+         <h2 class="text-center">
+            {{this.contextService.language[this.contextService.codeIdiom].lblCiudad}}
+         </h2>
+
+         <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 p-2">
+               <div>
+                  <label for="countryIdinput">
+                     {{this.contextService.language[this.contextService.codeIdiom].lblPais}}
+                  </label>
+                  <input 
+                     id="countryIdinput"
+                     disabled
+                     value={{this.contextService.state.country}}
+                     type="text"
+                     class="form-control"
+                     placeholder="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4  p-2">
+               <div>
+                  <label for="cityIdinput">
+                     {{this.contextService.language[this.contextService.codeIdiom].lblCiudad}}
+                  </label>
+                  <input 
+                  id="cityIdinput"
+                  disabled
+                  value={{this.contextService.state.city}}
+                     type="text"
+                     class="form-control"
+                     placeholder="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-2">
+               <div>
+                  <label for="moneyId">
+                     {{this.contextService.language[this.contextService.codeIdiom].lblMonto}}
+                  </label>
+                  <input 
+                     id="moneyId"
+                     disabled
+                     value={{this.contextService.money.value}}
+                     type="text"
+                     class="form-control"
+                     placeholder="">
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="row mt-3">
+               <div class="col-sm-12 col-md-6 col-lg-4 p-2">
+                <div>
+                  <label for="temperaturaId">
+                     {{this.contextService.language[this.contextService.codeIdiom].lblTemperatura}}
+                  </label>
+                  <input 
+                     id="temperaturaId"
+                     disabled
+                     value={{this.contextService.state.temperature_2m}}
+                     type="text"
+                     class="form-control"
+                     placeholder="">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4 p-2">
+               <div>
+                  <label for="nameCurrencyId">
+                     {{this.contextService.language[this.contextService.codeIdiom].lblNombreMoneda}}
+                  </label>
+                 <input 
+                    id="nameCurrencyId"
+                    disabled
+                    value={{this.contextService.state.currencyName}}
+                    type="text"
+                    class="form-control"
+                    placeholder="">
+               </div>
+             </div>
+
+             <div class="col-sm-12 col-md-6 col-lg-4 p-2">
+               <div>
+                  <label for="codeCurrencyId">
+                     {{this.contextService.language[this.contextService.codeIdiom].lblCodigoMoneda}}
+                  </label>
+                 <input 
+                    id="codeCurrencyId"
+                    disabled
+                    value={{this.contextService.state.currencyCode}}
+                    type="text"
+                    class="form-control"
+                    placeholder="">
+               </div>
+             </div>
+
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-12 col-md-6 col-lg-4 p-2">
+               <div>
+                  <label>
+                     {{this.contextService.language[this.contextService.codeIdiom].lblContoLocal}}
+                  </label>
+                  {{this.contextService.state.valorLocal | currency : this.contextService.state.currencyCode }}
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-2">
+               <div>
+                  <label for="tasaId">
+                     {{this.contextService.language[this.contextService.codeIdiom].lblTasaCambio}}
+                  </label>
+                  <input
+                     id="tasaId"
+                     disabled
+                     value={{this.contextService.state.tasaCambio}}
+                     type="text"
+                     class="form-control"
+                     placeholder="">
+                </div>
+              </div>
+
+
+            </div>
+
+
+      </div>
+
+   </div>
+
+</div>
+
+

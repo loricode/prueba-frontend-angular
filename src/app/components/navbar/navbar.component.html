@@ -1,0 +1,22 @@
+<div class="navbar-container">
+  <div class="space-grow"></div>
+<ul class="nav nav-pills">
+   <li class="nav-item dropdown">
+     <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" href="#"
+      role="button" aria-expanded="false">
+      {{contextService.language[contextService.codeIdiom].lblIdiioma}}
+    </a>
+     <ul class="dropdown-menu">
+       <li>
+        <button (click)="handleChangelanguage('Es')" class="dropdown-item">Español</button>
+      </li>
+       <li ><button (click)="handleChangelanguage('Ge')" class="dropdown-item" href="#">Aleman</button></li>
+     </ul>
+   </li>
+   <li class="nav-item" title="historial">
+     <button type="button" class="btn btn-history" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+      <img style="color: black;" src="../../../assets/auto_stories_24dp.svg" alt="."/>
+    </button>
+   </li>
+ </ul>
+</div>

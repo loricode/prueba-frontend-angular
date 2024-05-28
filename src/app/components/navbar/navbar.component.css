@@ -1,0 +1,21 @@
+.navbar-container {
+   background-color: #05094d;
+   min-height: 50px;
+   display: flex;
+   align-items: center;
+   padding: 8px;
+}
+
+.navbar-container .space-grow {
+   flex-grow: 1;
+}
+
+.btn-history{
+   border-radius: 100px;
+   background-color: #fff;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

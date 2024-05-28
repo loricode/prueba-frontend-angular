@@ -1,0 +1,33 @@
+.screen1-container{
+   display: flex;
+   flex-direction: column;
+   padding: 8px;
+}
+
+.card{
+ min-height: 65vh;
+}
+
+.autocomplete-items {
+   border: 1px solid #d4d4d4;
+   border-bottom: none;
+   border-top: none;
+   z-index: 99;
+   position: absolute;
+   background-color: #fff;
+ }
+ 
+ .autocomplete-items div {
+   padding: 10px;
+   cursor: pointer;
+   border-bottom: 1px solid #d4d4d4;
+ }
+ 
+ .autocomplete-items div:hover {
+   background-color: #e9e9e9;
+ }
+ 
+ .select-city{
+  padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+ }

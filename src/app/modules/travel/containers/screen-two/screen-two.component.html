@@ -1,0 +1,31 @@
+<div class="screen2-container">
+
+   <div class="container">
+
+      <div class="d-flex box-buttons mt-3 mb-3">
+       <app-button-previous urlPath="travel"></app-button-previous>
+       <app-button-next urlPath="/travel/three"></app-button-next>
+      </div>
+
+      <div class="card p-4">
+
+         <h2 class="text-center">
+            {{this.contextService.language[this.contextService.codeIdiom].lblPresupuesto}}
+         </h2>
+
+         <div class="mb-3">
+            <input 
+               appCurrencyFormat
+               [formControl]="this.contextService.money"
+               pattern="[0-9]+"
+               type="text"
+               class="form-control"
+               placeholder="ej:30000">
+          </div>
+
+      </div>
+
+   </div>
+
+</div>
+

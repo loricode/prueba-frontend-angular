@@ -1,0 +1,25 @@
+
+.autocomplete-list{
+   max-height: 240px;
+   overflow-y: auto;
+
+}
+
+.dropdown-menu{
+  min-width: 95.5%;
+}
+
+
+.autocomplete-items {
+   width: 100%;
+   cursor: pointer;
+ }
+
+ .autocomplete-items:hover {
+   background-color: #EcEcEc;
+ }
+ 
+ .autocomplete-active {
+   background-color: #e9e9e9 !important;
+ }
+ 
